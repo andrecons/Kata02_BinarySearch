@@ -8,9 +8,10 @@ namespace Kata02_BinarySearch.Controller.BinaryFunctions
 {
     public class Finder
     {
+
         public static int AskValue()
         {
-            Console.Write("Write a value between 0 and 499 to find its index: ");
+            Console.Write("Write a value between 1 and 500 to find the index: ");
             int value = 0;
 
             try
@@ -25,7 +26,7 @@ namespace Kata02_BinarySearch.Controller.BinaryFunctions
             return value;
         }
 
-        public static int GetIndexByLinear(int[] array, int userValue)
+        public static int IndexByLinear(int[] array, int userValue)
         {
             int index = -1;
 
@@ -40,24 +41,25 @@ namespace Kata02_BinarySearch.Controller.BinaryFunctions
 
             if (index < 0)
             {
-                Console.WriteLine("Value not found");
-                Environment.Exit(0);
+                //Console.WriteLine("Value not found");
+                return -1;
             }
 
 
-            return index;
+            return index - 1;
         }
 
-        public static int GetIndexByBinaryIterative(int[] array, int userInput)
+        public static int IndexByBinaryIterative(int[] array, int userInput)
         {
             int min = 0;
             int max = array.Length - 1;
             while (min <= max)
             {
                 int mid = (min + max) / 2;
+
                 if (userInput == array[mid])
                 {
-                    return (mid++);
+                    return (--mid);
                 }
                 else if (userInput < array[mid])
                 {
@@ -71,5 +73,32 @@ namespace Kata02_BinarySearch.Controller.BinaryFunctions
             //return -1 when the value is not found
             return -1;
         }
+
+        public static int IndexByBinaryRecursive(int[] array, int userInput, int min, int max)
+        {
+
+            if (min > max)
+            {
+                return -1;
+            }
+            else
+            {
+
+                int mid = (min + max) / 2;
+                if (userInput == array[mid])
+                {
+                    return (mid - 1);
+                }
+                else if (userInput < array[mid])
+                {
+                    return IndexByBinaryRecursive(array, userInput, min, (mid - 1));
+                }
+                else
+                {
+                    return IndexByBinaryRecursive(array, userInput, (mid + 1), max);
+                }
+            }
+        }
+
     }
 }

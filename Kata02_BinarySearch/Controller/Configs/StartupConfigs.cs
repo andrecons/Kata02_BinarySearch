@@ -10,13 +10,13 @@ namespace Kata02_BinarySearch.Controller.Configs
     {
         public static int[] CreateArray(int maxValue)
         {
-            int[] array = new int[maxValue];
+            int[] array = new int[501];
             for (int i = 0; i < maxValue; i++)
             {
                 array[i] = i;
             }
 
-            PrintArray(array);
+            //PrintArray(array);
 
             return array;
         }

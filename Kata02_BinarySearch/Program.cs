@@ -1,4 +1,4 @@
 ﻿using Kata02_BinarySearch.Controller;
 
-Console.WriteLine("Binary search");
+Console.WriteLine("Index finder");
 BinarySearchController.Start(500);
