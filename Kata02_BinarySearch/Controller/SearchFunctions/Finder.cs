@@ -11,7 +11,7 @@ namespace Kata02_BinarySearch.Controller.BinaryFunctions
 
         public static int AskValue()
         {
-            Console.Write("Write a value between 1 and 500 to find the index: ");
+            Console.Write("Write a value between 0 and 499 to find the index: ");
             int value = 0;
 
             try
@@ -90,6 +90,7 @@ namespace Kata02_BinarySearch.Controller.BinaryFunctions
                 }
             }
         }
+
 
     }
 }
