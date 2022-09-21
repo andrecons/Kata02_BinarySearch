@@ -35,18 +35,9 @@ namespace Kata02_BinarySearch.Controller.BinaryFunctions
                 if (userValue == array[i])
                 {
                     index = i;
-                    break;
                 }
             }
-
-            if (index < 0)
-            {
-                //Console.WriteLine("Value not found");
-                return -1;
-            }
-
-
-            return index - 1;
+            return index;
         }
 
         public static int IndexByBinaryIterative(int[] array, int userInput)
@@ -59,7 +50,7 @@ namespace Kata02_BinarySearch.Controller.BinaryFunctions
 
                 if (userInput == array[mid])
                 {
-                    return (--mid);
+                    return (mid);
                 }
                 else if (userInput < array[mid])
                 {
@@ -87,7 +78,7 @@ namespace Kata02_BinarySearch.Controller.BinaryFunctions
                 int mid = (min + max) / 2;
                 if (userInput == array[mid])
                 {
-                    return (mid - 1);
+                    return (mid);
                 }
                 else if (userInput < array[mid])
                 {

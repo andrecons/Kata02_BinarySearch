@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata02_BinarySearch", "Kata02_BinarySearch\Kata02_BinarySearch.csproj", "{A27F36F1-A6D3-46BD-A73E-3F84D17B7A00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kata02_BinarySearch", "Kata02_BinarySearch\Kata02_BinarySearch.csproj", "{A27F36F1-A6D3-46BD-A73E-3F84D17B7A00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{086FD184-6095-4B04-B362-8488002AF2BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A27F36F1-A6D3-46BD-A73E-3F84D17B7A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A27F36F1-A6D3-46BD-A73E-3F84D17B7A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A27F36F1-A6D3-46BD-A73E-3F84D17B7A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{086FD184-6095-4B04-B362-8488002AF2BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{086FD184-6095-4B04-B362-8488002AF2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{086FD184-6095-4B04-B362-8488002AF2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{086FD184-6095-4B04-B362-8488002AF2BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

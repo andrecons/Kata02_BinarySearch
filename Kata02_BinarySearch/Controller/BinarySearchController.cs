@@ -19,7 +19,7 @@ namespace Kata02_BinarySearch.Controller
 
             Console.WriteLine("\n");
 
-            int indexOfUserInput = Finder.IndexByLinear(array, userInput);
+            int indexOfUserInput = Finder.IndexByLinear2(array, userInput);
             Console.WriteLine("Index by Linear method: " + indexOfUserInput);
 
             indexOfUserInput = Finder.IndexByBinaryIterative(array, userInput);

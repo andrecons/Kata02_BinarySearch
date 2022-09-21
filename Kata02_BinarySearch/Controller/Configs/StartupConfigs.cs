@@ -8,10 +8,10 @@ namespace Kata02_BinarySearch.Controller.Configs
 {
     class StartupConfigs
     {
-        public static int[] CreateArray(int maxValue)
+        public static int[] CreateArray(int size)
         {
-            int[] array = new int[501];
-            for (int i = 0; i < maxValue; i++)
+            int[] array = new int[size - 1];
+            for (int i = 0; i < size - 1; i++)
             {
                 array[i] = i;
             }
